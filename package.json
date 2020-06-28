@@ -1,0 +1,19 @@
+{
+	"name": "raks",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "node ./util/build.js",
+		"lint": "tslint --project \"tsconfig.json\" --quiet",
+		"start": "node ./dist --NODE_ENV prod",
+		"start:dev": "nodemon --config nodemon.json",
+		"test": "ts-mocha test/test.ts --timeout=15000 --NODE_ENV dev --exit"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^13.13.4",
+		"ts-mocha": "^7.0.0",
+		"ts-node": "^8.10.1",
+		"tslint": "^6.1.2",
+		"typescript": "^3.8.3"
+	}
+}
